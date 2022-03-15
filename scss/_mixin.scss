@@ -1,0 +1,19 @@
+
+
+
+
+
+
+@mixin mixIng {
+		align-items: center;  
+	    background-color: $colorPrimario;                           
+        color: $colorSecundario;
+}
+
+footer {
+	@include mixIng;
+}
+
+header {
+	@include mixIng;
+}

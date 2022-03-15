@@ -1,0 +1,23 @@
+$estilos:(
+       Tcolor:red,
+       centro:center,
+       tFuente:35px,
+       paddingTop:10px,
+       tdecoracion: none,                          
+       colorSec: $colorSecundario,
+       fontTam: 15px,                                   
+       tTransform: uppercase,
+       fweight: 600
+
+);
+
+a{
+       text-decoration:map-get($estilos,tdecoracion);
+       color:map-get($estilos,colorSec);
+       font-size:map-get($estilos,fontTam);
+       text-transform:map-get($estilos,tTransform);
+       font-weight:map-get($estilos,fweight);
+}
+
+
+

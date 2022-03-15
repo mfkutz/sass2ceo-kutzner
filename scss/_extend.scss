@@ -1,0 +1,29 @@
+
+
+.StandarButton{
+	     width: 120px;                              
+         color: $colorPrimario;                             
+         border: 0px;                             
+         font-size: 20px;                          
+         margin-top: 1rem;                        
+         background-color: rgba(0, 0, 0, .5);               
+         
+}
+
+
+
+button {
+	@extend .StandarButton;
+	padding: 1rem;                            
+    border-radius: 5px;                       
+    transition: width 1s ; 
+}
+
+.SignIn{
+	@extend .StandarButton;
+	color: white;
+	border: 1px solid $colorSecundario;
+	background-color: $colorTres;
+
+}
+

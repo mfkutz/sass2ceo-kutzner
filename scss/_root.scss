@@ -1,0 +1,77 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	Box-sizing: border-box;                     
+}
+
+.contenedor {   
+	display: grid;                                          
+	grid-template-columns: 1fr 1fr 1fr;                      
+	grid-template-rows: 150px 800px 150px;             
+	grid-auto-flow: row;                                     
+	grid-auto-columns: 1fr;                                  
+	grid-template-areas:                                     
+	"header header header"
+	"main main main"
+	"footer footer footer";
+	width: 100%;                                             
+	height: 100%;                                     
+}
+
+button:hover{                                      
+	background-color: #488FB1;
+	transition: .5s;
+}
+.main {
+    grid-area: main;
+	background-image: url("../assets/img/principalchess.jpg");        
+	background-repeat: no-repeat;                                
+	background-position: center;                                 
+	background-size: cover;                                      
+	display: flex;                                               
+	flex-direction: column;                                      
+	justify-content: center;                                     
+	align-items: center;                                         
+}
+.main h1 {                                                       
+	color: $colorPrimario;                                             
+	font-size: 4rem;                                             
+	text-shadow: 2px 3px 2px $colorSecundario;                              
+}
+
+.contenedor_campeonato {   
+	display: grid;                                           
+	grid-template-columns: 1fr 1fr 1fr;                      
+	grid-template-rows: 150px 650px 150px;             
+	grid-auto-flow: row;                                     
+	grid-auto-columns: 1fr;                                  
+	grid-template-areas:                                     
+	"header header header header header header"
+	"main_campeonato-izq main_campeonato-izq main_campeonato-izq main_campeonato-der main_campeonato-der main_campeonato-der "
+	"footer footer footer footer footer footer";
+	width: 100%;                                             
+	height: 100%;                                     
+}
+
+.main_campeonato-izq {
+	grid-area: main_campeonato-izq;
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	justify-content: center;
+	align-items: flex-end;
+	padding: 50px; 
+	text-align: right;  
+   }
+
+.main_campeonato-der {
+	grid-area: main_campeonato-der;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-image: url(../assets/img/fondoc.jpg);
+	background-repeat: no-repeat;                                
+	background-position: center;                                 
+	background-size: cover;                                      
+}
